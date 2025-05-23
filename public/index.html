@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Anomaki Apis - Koleksi API gratis untuk kebutuhan pengembangan aplikasi Anda">
-    <meta name="keywords" content="API, Rest API, Anomaki, Developer Tools, Free API">
+    <meta name="description" content="Deluxe Apis: una colección de API gratuitas para sus necesidades de desarrollo de aplicaciones">
+    <meta name="keywords" content="API, API Rest, KenisawaDev, Herramientas para desarrolladores, API gratuita">
     <meta name="author" content="Anomaki Team">
 
-   <link rel="icon" href="https://i.pinimg.com/236x/4d/01/91/4d0191ec96622626c52b9691c74d677e.jpg">
-   <meta property="og:image" content="https://i.pinimg.com/236x/4d/01/91/4d0191ec96622626c52b9691c74d677e.jpg">
-   <meta property="og:url" content="https://www.apis-anomaki.zone.id">
+   <link rel="icon" href="https://files.catbox.moe/ggmssp.jpg">
+   <meta property="og:image" content="https://files.catbox.moe/ggmssp.jpg">
+   <meta property="og:url" content="https://github.com/MauroAzcurra">
    <meta property="og:type" content="website">
   
-    <meta property="og:title" content="Anomaki Apis">
-    <meta property="og:description" content="Koleksi API gratis">
+    <meta property="og:title" content="Deluxe Apis">
+    <meta property="og:description" content="Colección de APIs gratuitas">
     <meta property="og:type" content="website">
-    <title>Anomaki Apis | API Gratis</title>
+    <title>Deluxe Apis | API Gratis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -777,32 +777,32 @@
 <body>
     <div class="container">
         <div id="comic-banner-container" class="comic-banner">
-            <!-- Banner akan diisi oleh JavaScript -->
+            <!-- El banner se rellenará con JavaScript. -->
         </div>
         
         <header>
             <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
-            <h1 id="api-name">Anomaki Apis</h1>
+            <h1 id="api-name">Deluxe Apis</h1>
             <div class="status" id="api-status">Online</div>
             <p class="description" id="api-description">Simple Rest Api.</p>
         </header>
         
         <div class="search-container">
-            <input type="text" class="search-input" id="searchInput" placeholder="Cari API berdasarkan nama atau deskripsi...">
+            <input type="text" class="search-input" id="searchInput" placeholder="Busca el ednpoint por su nombre o descripción...">
         </div>
         
         <div id="categories-container"></div>
         
         <footer>
-            <p>Dibuat dengan ❤ oleh <span id="api-creator">Anomaki Apis</span></p>
-            <p>Versi <span id="api-version">v1.0</span></p>
+            <p>Hecho con ❤ por <span id="api-creator">Deluxe Team Ofc</span></p>
+            <p>Versión <span id="api-version">v1.0</span></p>
         </footer>
     </div>
 
     <div class="popup" id="apiPopup">
         <div class="popup-content">
             <div class="popup-header">
-                <h2 class="popup-title" id="popupTitle">Hasil API</h2>
+                <h2 class="popup-title" id="popupTitle">Resultados de la API</h2>
                 <button class="close-popup" id="closePopup">X</button>
             </div>
             <div class="popup-body" id="popupBody"></div>
@@ -822,7 +822,7 @@
             const currentTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', currentTheme);
             
-            themeToggle.textContent = currentTheme === 'dark' ? '☀️ Mode Terang' : '🌙 Mode Gelap';
+            themeToggle.textContent = currentTheme === 'dark' ? '☀️ Modo Claro' : '🌙 Modo Oscuro';
             
             themeToggle.addEventListener('click', function() {
                 const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -860,13 +860,13 @@
                 if (!bannerImage) return;
                 
                 const bannerHTML = `
-                    <img src="${bannerImage}" alt="Banner Anomaki Apis" loading="lazy">
-                    <div class="banner-caption">Selamat Menggunakan -/o/-</div>
+                    <img src="${bannerImage}" alt="Banner Deluxe Apis" loading="lazy">
+                    <div class="banner-caption">Seguro de usar -/o/-</div>
                     <div class="speech-bubble" style="top: 20px; right: 20px;">
-                        Coba API gratis sekarang!
+                        ¡Pruebe la API gratuita ahora!
                     </div>
                     <div class="speech-bubble" style="bottom: 40px; left: 20px; animation-delay: 0.5s;">
-                        Keren banget!
+                        ¡Muy genial!
                     </div>
                 `;
                 
@@ -981,7 +981,7 @@
                             
                             const apiKeyBadge = document.createElement('span');
                             apiKeyBadge.className = `api-key-badge ${item.requireKey ? '' : 'public'}`;
-                            apiKeyBadge.textContent = item.requireKey ? 'Butuh Key' : 'Publik';
+                            apiKeyBadge.textContent = item.requireKey ? 'Necesito una apikey' : 'Publico';
                             apiName.appendChild(apiKeyBadge);
                             
                             const apiDesc = document.createElement('p');
@@ -1067,12 +1067,12 @@
                             
                             const tryBtn = document.createElement('button');
                             tryBtn.className = 'try-btn';
-                            tryBtn.textContent = 'Coba Sekarang';
+                            tryBtn.textContent = 'Pruébalo ahora';
                             
                             if (item.status.toLowerCase() !== 'ready') {
                                 tryBtn.classList.add('disabled');
                                 tryBtn.addEventListener('click', function() {
-                                    showStatusNotification(`Endpoint ini sedang ${statusText.toLowerCase()}!`);
+                                    showStatusNotification(`Este endpoint se encuentra actualmente ${statusText.toLowerCase()}!`);
                                 });
                             } else {
                                 tryBtn.addEventListener('click', function() {
@@ -1097,7 +1097,7 @@
                     errorElement.style.backgroundColor = '#c62828';
                     errorElement.style.color = 'white';
                     errorElement.style.padding = '20px';
-                    errorElement.textContent = `Error memuat data API: ${error.message}`;
+                    errorElement.textContent = `Error al cargar datos de la API: ${error.message}`;
                     document.getElementById('categories-container').appendChild(errorElement);
                 }
             }
@@ -1126,7 +1126,7 @@
                     
                     const keyInput = document.createElement('input');
                     keyInput.type = 'text';
-                    keyInput.placeholder = 'Masukkan API key Anda';
+                    keyInput.placeholder = 'Ingrese su clave API';
                     keyInput.id = `api-key-${item.name.replace(/\s+/g, '-').toLowerCase()}`;
                     keyInput.required = true;
                     
@@ -1157,7 +1157,7 @@
                 
                 const executeBtn = document.createElement('button');
                 executeBtn.className = 'execute-btn';
-                executeBtn.textContent = 'Jalankan';
+                executeBtn.textContent = 'Ejecutar';
                 executeBtn.addEventListener('click', function() {
                     executeApi(item);
                 });
@@ -1170,11 +1170,11 @@
             }
             
             async function executeApi(item) {
-                popupTitle.textContent = `Hasil ${item.name}`;
+                popupTitle.textContent = `Resultado ${item.name}`;
                 popupBody.innerHTML = `
                     <div style="text-align: center; padding: 20px;">
                         <div class="loading"></div>
-                        <p>Memproses request ke ${item.name}...</p>
+                        <p>Procesando solicitud de ${item.name}...</p>
                     </div>
                 `;
                 apiPopup.style.display = 'flex';
@@ -1186,7 +1186,7 @@
                     if (item.requireKey) {
                         const apiKey = document.getElementById(`api-key-${item.name.replace(/\s+/g, '-').toLowerCase()}`).value.trim();
                         if (!apiKey) {
-                            throw new Error('API key diperlukan');
+                            throw new Error('Se requiere clave API');
                         }
                         params.append('apikey', apiKey);
                     }
@@ -1207,7 +1207,7 @@
                     const response = await fetch(url);
                     
                     if (!response.ok) {
-                        throw new Error(`Request gagal dengan status ${response.status}`);
+                        throw new Error(`Solicitud fallida con estado ${response.status}`);
                     }
                     
                     const data = await response.json();
@@ -1224,7 +1224,7 @@
                         <div class="error-message">
                             <i class="fas fa-exclamation-triangle"></i>
                             <p><strong>Error:</strong> ${error.message}</p>
-                            <p>Coba lagi atau periksa parameter Anda</p>
+                            <p>Inténtalo de nuevo o comprueba tus parámetros</p>
                         </div>
                     `;
                 }
