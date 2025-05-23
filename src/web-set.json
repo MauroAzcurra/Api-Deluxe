@@ -8,7 +8,7 @@
   },
   "apiSettings": {
     "creator": "KenisawaDev",
-    "globalKey": ["yo"],
+    "globalKey": ["DeluxeTeam"],
     "defaultRequireKey": true
   },
   "categories": [
@@ -17,32 +17,32 @@
       "items": [
         {
           "name": "Film Finder AI",
-          "desc": "Temukan film berdasarkan kriteria tertentu",
+          "desc": "Buscar películas según criterios específicos",
           "path": "/search/filmfinder?q=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "q": "Jenis film yang dicari (contoh: film horror tahun 90an)"
+            "q": "Tipo de película que se busca (ejemplo: películas de terror de los 90)"
           }
         },
         {
           "name": "Douyin Search",
-          "desc": "Temukan Douyinmu Berdasarkan Kriteria",
+          "desc": "Encuentra tu Douyin por criterios",
           "path": "/search/douyinsearch?q=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "q": "Masukkan Query yang ingin dicari"
+            "q": "Ingrese la consulta que desea buscar"
           }
         },
         {
           "name": "Youtube Search",
-          "desc": "Temukan Dari Youtube",
+          "desc": "Encuentra en Youtube",
           "path": "/search/ytsearch?query=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "query": "Masukkan Query yang ingin dicari"
+            "query": "Ingrese la consulta que desea buscar"
           }
         }        
       ]
@@ -52,62 +52,62 @@
       "items": [
         {
           "name": "Twitter",
-          "desc": "Download Twitter",
+          "desc": "Descarga de Twitter",
           "path": "/downloader/twitterdl?url=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "url": "url dari Twitter/X"
+            "url": "URL de Twitter/X"
           }
         },
         {
           "name": "Instagram",
-          "desc": "download media dari instagram",
+          "desc": "descargar contenido multimedia de Instagram",
           "path": "/downloader/dlig?url=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "url": "url dari instagram"
+            "url": "Url de instagram"
           }
         },
         {
-          "name": "Downloader Profile Instagram",
-          "desc": "Download Profile IG Via Username",
+          "name": "Descargar perfil de Instagram",
+          "desc": "Descargar perfil de IG por nombre de usuario",
           "path": "/downloader/igdl-pp?username=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "username": "Username akun dari ig"
+            "username": "Usuario de ig"
           }
         },
         {
-          "name": "Tiktok Downloader",
-          "desc": "Download Tiktok",
+          "name": "Descargas de Tiktok",
+          "desc": "Descarga medios de tiktok",
           "path": "/downloader/tiktokdl?url=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "url": "url dari tiktok"
+            "url": "Url de tiktok"
           }
         },
         {
-          "name": "Youtube Video Downloader",
-          "desc": "Download Video Youtube",
+          "name": "Descargar Vídeo Youtube",
+          "desc": "Descarga videos de YouTube",
           "path": "/downloader/ytv?url=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "url": "url dari youtube"
+            "url": "Url de youtube"
           }
         },
         {
-          "name": "Youtube Audio Downloader",
-          "desc": "Download Audio Youtube",
+          "name": "Descarga Audio YouTube",
+          "desc": "Descarga audios de YouTube",
           "path": "/downloader/yta?url=",
           "status": "maintenance",
           "requireKey": false,
           "params": {
-            "url": "url dari youtube"
+            "url": "Url de youtube"
           }
         }                
       ]
@@ -122,17 +122,17 @@
           "status": "ready",
           "requireKey": false,
           "params": {
-            "id": "masukkan id free fire"
+            "id": "Ingresa tu ID de Free Fire"
           }
         },
         {
           "name": "Instagram Stalk",
-          "desc": "Stalker Instagram Via Username",
+          "desc": "Stalker Instagram Via Nombre de usuario",
           "path": "/stalker/igstalk?username=",
           "status": "error",
           "requireKey": false,
           "params": {
-            "username": "Username tanpa @"
+            "username": "Nombre de usuario sin @"
           }
         }
       ]
@@ -142,32 +142,32 @@
       "items": [
         {
           "name": "Ai Puisi",
-          "desc": "Generate puisi pendekmu",
+          "desc": "Genera tu poema corto",
           "path": "/ai/ai-puisi?text=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "text": "Teks puisi mu."
+            "text": "Tu texto de poesía."
           }
         },        
         {
           "name": "LuminAI",
-          "desc": "Chat dengan LuminAI",
+          "desc": "Chatea con LuminAI",
           "path": "/ai/ai-lumin?text=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "text": "Pesan untuk LuminAI"
+            "text": "Mensaje para LuminAI"
           }
         },
         {
           "name": "Arting Ai",
-          "desc": "Buat gambar mu dari arting",
+          "desc": "Crea tu propia imagen a partir del arte.",
           "path": "/ai/ai-arting?prompt=",
           "status": "offline",
           "requireKey": false,
           "params": {
-            "prompt": "Prompt untuk Buat gambar."
+            "prompt": "Solicitud para crear una imagen."
           }
         }       
       ]
@@ -177,7 +177,7 @@
       "items": [
         {
           "name": "Random Waifu",
-          "desc": "Get Random Waifumu",
+          "desc": "Consigue una waifu aleatoria",
           "path": "/random/randomwaifu",
           "status": "ready",
           "requireKey": true
@@ -188,14 +188,14 @@
       "name": "Uploader",
       "items": [
         {
-          "name": "Upload teks to catbox",
-          "desc": "TYPE : ['js', 'ts', 'py', 'cpp', 'c', 'java', 'html', 'css', 'json', 'xml', 'php', 'rb', 'go', 'rs', 'sh', 'bat', 'kt']",
+          "name": "Subir texto a catbox",
+          "desc": "Tipos : ['js', 'ts', 'py', 'cpp', 'c', 'java', 'html', 'css', 'json', 'xml', 'php', 'rb', 'go', 'rs', 'sh', 'bat', 'kt']",
           "path": "/uploader/uptekstocatbox?teks=&type=",
           "status": "ready",
           "requireKey": false,
           "params": {
-            "teks": "masukkan teksmu",
-            "type": "type file mu"
+            "teks": "Ingrese su texto",
+            "type": "tipo archivo"
           }
         }
       ]
@@ -205,12 +205,12 @@
       "items": [
         {
           "name": "Beuty Javascript Code",
-          "desc": "Rapikan dan bersihkan codemu",
+          "desc": "Ordena y limpia tu código",
           "path": "/tools/beautyjs?code=",
           "status": "maintenance",
           "requireKey": false,
           "params": {
-            "code": "masukkan codemu"
+            "code": "Introduce tu código"
           }
         }
       ]
